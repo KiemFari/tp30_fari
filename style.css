@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
+}
+
+/* section galerie */
+section#galerie img{
+    width: 49%;
+    display: inline;
+}
+
+
+/*-------------- nav ------------*/
+php{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #111;
+}
+/* body{
+    /* background-color: #111; */
+    /* background-color: #ccc; */
+/* } */
+section{
+    margin-top: 50px;
+}
+a{
+    text-decoration: 0;
+}
+nav{
+    display: flex;
+}
+header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+header .logo a {
+    font-size: 25px;
+    color: green;
+    /* text-decoration: none; */
+}
+header .logo a span{
+    color: #fff;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li{
+    margin: 0 15px;
+    list-style-type: none;
+}
+.menu li a{
+    color: #fff;
+    font-size: 14px;
+}
+.btn-reservation{
+    color: #29d9d5;
+    font-size: 14px;
+    bottom: 2px solid #29d990;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+.btn-reservation:hover {
+    background-color: #29d9ad;
+    color: #fff;
+    font-weight: bold;
+}
+.find_trip{
+   background-color: #222; 
+   padding: 10px;
+   width: 700px;
+   position: relative;
+   bottom: -3%;
+}
+.find_trip form{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   width: 100%;
+ }
+ .find_trip form div , .find_trip form input[type="submit"]{
+display: flex;
+flex-direction: column;
+width: 20%;
+ }
+ .find_trip form label{
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+ }
+ .find_trip form input {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid #29d972;
+    outline: 0;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+ }
+ .find_trip form input[type="submit"]{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #29d996;
+    cursor: pointer;
+    transition: 0.5s;
+ }
+ .find_trip form input[type="submit"]:hover{
+    box-shadow: 0 0 10px;
+ }
+
+ 
+/* --------------------- */
+
+
+/* ---------------- */
+/*----- home acceuil css------ */
+#home{
+    background: linear-gradient(rgba(9, 231, 9, 0.1),#57a762),url("burkina.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    
+}
+#home h2{
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02px;
+    color: transparent;
+    text-align: center;
+}
+
+/* --------------------- */
+/* section contact */
+    section#contact form{
+        width: 50%;
+        margin: 30px auto;
+    }
+    section#contact form label,
+    section#contact form input{
+       display: block; 
+       width: 100%;
+    }
+    section#contact form input{
+        margin-bottom: 10px;
+    }
+    section#contact form button{
+        display: block;
+        margin: 20px auto;
+        padding: 5px 20px;
+        font-family: inherit;
+        cursor: pointer;
+        background-color: #0044ff;
+    }
+    section#contact form p{
+        padding: 0;
+    }
+   h2{
+    align-items: center;
+    padding-left: 500px;
+    font-size: 50px;
+   }
+   /* --------------- */
+
+/* section ouaga page d'acceuil*/
+
+.oua{
+    height: 300px;
+    width: 700px;
+    background-size: cover;
+
+}
+ .ouaga1{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0 10px;
+    width: 100%;
+} 
+.title{
+    text-decoration: capitalize;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #29d964;
+    position: relative;
+    margin-left: 15px;
+    font-weight: 18px;
+
+}
+.title::after{
+   position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+}
+.img-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+/* .img-desc .left{
+   position: relative; 
+   margin-left: 10px;
+   height: 250px;
+   width: 40%;
+
+} */
+.img-desc .right{
+    width: 57%;
+}
+
+/* .img-desc .left video {
+width: 100%;
+height: 100%;
+position: relative;
+box-shadow: 0 0 10px #29d97e;
+}
+.img-desc .left::after{
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    content: "";
+    height: 100%;
+    background-color: #29d97e;
+    width: 100%;
+    z-index: -1;
+} */
+.img-desc .right h3{
+color: #18a921;
+font-size: 25px;
+margin-bottom: 20px;
+}
+.img-desc .right p{
+color: #999;
+font: 14px;
+margin-bottom: 36px;
+
+
+}
+.img-desc .right a {
+  border: 1px solid #18a921;
+  color: #18a921;
+  font-size: 14px;
+  padding: 8px 25px;
+  font-weight: bold;
+
+}
+
+
+
+/* ----------------------- */
+/*--------------- Footer ------------*/
+.omni{
+    background-color: white;
+    padding: 60px 0 15px 0;
+} 
+.footer{
+    background-color: rgb(8, 131, 8);
+    /* width: 500px; */
+    height: 350px;
+    display: flex;
+    color: #fff;
+    /* justify-content: space-evenly; */
+}
+.footer img{
+    padding-top: 40px;
+    /* width: 100px; */
+    padding-left: 150px;
+}
+.T{
+    padding-left: 150px;
+    padding-top: 10px;
+}
+.R {
+    padding-top: 50px;
+    padding-left: 80px;
+    font-size: 1.50rem;
+
+}
+.S{
+    display: flex;
+    padding-left: 80px;
+}
+.S p{
+    padding-left: 20px;
+}
+.V{
+    display: flex;
+    padding-left: 80px;
+}
+.V p{
+    padding-left: 20px;
+}
+.W{
+    display: flex;
+    padding-left: 80px;
+}
+.W p{
+    padding-left: 20px;
+}
+.X{
+    display: flex;
+    padding-left: 80px;
+    color: #fff;
+    font-size: 20px;
+}
+.i{
+    padding-left: 20px;
+}
+.Z {
+    padding-top: 35px;
+    padding-left: 80px;
+    font-size: 1.50rem;
+}
+.a{
+    display: flex;
+    padding-left: 80px;
+}
+.a i{
+    font-size: 1.50rem;
+}
+.a p{
+    padding-left: 20px;
+    padding-top: 7px;
+}
+.b{
+    display: flex;
+    padding-left: 80px;
+}
+.b i{
+    font-size: 1.50rem;
+}
+.b p{
+    padding-left: 20px;
+    padding-top: 7px;
+}
+.c{
+    display: flex;
+    padding-left: 80px;
+}
+.c i{
+    font-size: 1.50rem;
+}
+.c p{
+    padding-left: 20px;
+    padding-top: 7px;
+}
+.d{
+    display: flex;
+    padding-left: 80px;
+}
+.d i{
+    font-size: 1.50rem;
+}
+.d p{
+    padding-left: 20px;
+    padding-top: 7px;
+}
+.e{
+    display: flex;
+    padding-left: 80px;
+}
+.e i{
+    font-size: 1.50rem;
+}
+.e p{
+    padding-left: 20px;
+    padding-top: 7px;
+}
+
+
+.f {
+    padding-top: 35px;
+    padding-left: 80px;
+    font-size: 1.50rem;
+}
+ .g{
+    display: flex;
+    padding-left: 80px;
+}
+.g i{
+    font-size: 1.50rem;
+}
+.g p{
+    padding-left: 20px;
+    padding-top: 7px;
+}
+.h{
+    display: flex;
+    padding-left: 80px;
+}
+.h i{
+    font-size: 1.50rem;
+}
+.h p{
+    padding-left: 20px;
+    padding-top: 7px;
+}
+.j{
+    display: flex;
+    padding-left: 80px;
+}
+.j i{
+    font-size: 1.50rem;
+}
+.j p{
+    padding-left: 20px;
+    padding-top: 7px;
+}
+.k{
+    display: flex;
+    padding-left: 80px;
+}
+.k i{
+    font-size: 1.50rem;
+}
+.k p{
+    padding-left: 20px;
+    padding-top: 7px;
+}
+.l{
+    display: flex;
+    padding-left: 80px;
+}
+.l i{
+    font-size: 1.50rem;
+}
+.l p{
+    padding-left: 20px;
+    padding-top: 7px;
+} 
+.m{
+    display: flex;
+    color: #fff;
+    padding-top: 30px;
+}
+.n{
+    padding-left: 700px;
+}
+.o{
+    padding-left: 150px;
+}
+/* --------------ouaga page 2------------------- */
+#ouagadou{
+    background-image: linear-gradient(rgba(149, 158, 159, 0.1),
+    #67e191),url("5.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#ouagadou h1{
+    font-size: 50px;
+}
+#ouagadou p{
+    font-size: 15px;
+}
+
+#maison{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #29d964;
+    bottom: auto;
+}
+.ouaga2{
+    height: 700px;
+    width: 500px;
+}
+#chevron{
+    width: 30px;
+    height: 30px;
+}
+.ouage2-1{
+    display: inline;
+}
+button{
+    border: 3px solid #18a921;
+}
+#maison-1 h1{
+padding-left: 250px;
+font-size: 2.5rem;
+color: #29d964;
+padding-bottom: 20px;
+
+}
+#maison-1 p{
+    padding-left: 100px;
+    font-size: 2rem;
+   
+} 
+#loumbila{
+    display: flex;
+    height: 220px;
+    width: 220px;
+    justify-content: space-evenly;
+}
+#maison-2 h1{
+    padding-left: 400px;
+font-size: 2rem;
+color: #29d964;
+
+}
+#maison-2 p{
+    padding-left: 50px;
+font-size: 1.5rem;
+
+}
+#loumbila-2{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    width: 250px;
+}
+/* --------------------------------- */
+#bobo-2{
+    display: flex;
+    justify-content: space-around;
+}
+#bobo-2 p{
+   justify-content: end;
+}
+#bobo-2 img{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+}
+#bobo-1 h2{
+    padding-left: 100px;
+    font-size: 3rem;
+    color: #29d964;
+    padding-bottom: 10px;
+    
+}
+#bobo-1 {
+   
+    padding-bottom: 10px;
+    
+}
+.bobod{
+    align-items: center;
+    height: 300px;
+    width: 700px;
+}
+#dioula{
+    align-items: center;
+    padding-left: 350px;
+}
+#dioula h1 {
+    padding-left: -5000px;
+    font-size: 30px;
+}
+#dioula p {
+    padding-right: 100px;
+    font-size: 20px;
+}
+
+#bobodio{
+    background-image: linear-gradient(rgba(150, 159, 149, 0.1),
+    #67e191),url("mosque.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+/*--------- banfora2----------------- */
+#banfora{
+    background-image: linear-gradient(rgba(9, 231, 9, 0.1),
+    #67e191),url("banfora1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#banfora h1{
+    font-size: 50px;
+}
+#banfora p{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#chute{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*------------ page connexion------------- */
+#connecter{
+    padding-left: 300px;
+    margin-top: 200px;
+}
+#connect{
+    background-color: #18a921;
+    border: 3px solid;
+}
+
+
+
+/*------------ page inscription ------------*/
+.container1{
+    display: flex;
+    justify-content: space-around;
+}
+   
+.A{
+    padding-top: 100px; 
+    display: flex;
+    justify-content: center;
+}
+h3{
+    color: darkslateblue;
+    padding: 15px 15px;
+    display: inline-block;
+    font-size: 25px;
+    border: 1px solid #dad8e4;
+    margin-bottom: 30px;
+}
+.span{
+    
+    background-color: white;
+    align-items: center;
+    text-align: center;
+     height: 50%;
+    width: 50%;
+}
+
+.fari{
+    background-color: white;
+    justify-content: space-between;
+    padding-left: 17px;
+    
+}
+.met{
+    height: 60%;
+    
+}
+.link{
+    display: flex;
+}
+.vert{
+    background-color: green;
+    padding: 5px 5px; 
+    /* display: inline-block; */
+    font-size: 20px; 
+     border: 0px solid hsl(250, 18%, 87%); 
+    margin-bottom: 100px;
+    top: 300px;
+}
+.form-control{
+    height: 37px;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    /* width: 40%; */
+    color: #666;
+    /* justify-content: space-around; */
+    padding-top: 0px;
+}
+
